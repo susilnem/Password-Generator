@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Password Generator|Sushil Tiwari</title>
+
+</head>
+
+<body>
+    <div class="container text-center py-3 ">
+        <h1>Password Generator</h1>
+        <hr>
+        <form action="{% url 'result' %} ">
+            <select name="length" id="length">
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10" selected="select">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+            </select>
+            length
+
+            <br>
+            <input type="checkbox" name="uppercase"> Uppercase
+            <br>
+            <input type="checkbox" name="special"> Special Character
+            <br><input type="checkbox" name="numbers"> Numbers
+            <br>
+            <input type="Submit" value="Generate Password" class=" btn btn-primary">
+        </form>
+    </div>
+</body>
+
+</html>
